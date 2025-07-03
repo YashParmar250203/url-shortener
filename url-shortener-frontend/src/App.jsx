@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { Router, Route, Routes } from 'react-router-dom'
 import './App.css'
 import LandingPage from './components/LandingPage'
 import AboutPage from './components/AboutPage';
@@ -14,7 +14,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      <Router>
       <NavBar />
       <Toaster position='top-center' />
         <Routes>
@@ -25,7 +25,7 @@ function App() {
           <Route path = '/dashboard' element = {<DashboardLayout />} />
         </Routes>
       <Footer />
-      </BrowserRouter>
+      </Router>
     </>
   )
 }
