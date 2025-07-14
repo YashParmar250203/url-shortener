@@ -4,7 +4,7 @@ import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import { ContextProvider } from './contextApi/ContextApi.jsx';
-import { QueryClient } from 'react-query';
+import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient();
 
